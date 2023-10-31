@@ -69,27 +69,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
-
  <!-- custom webpack creat-react-app -->
+
 - npm i customize-cra react-app-rewired
 - https://github.com/timarney/react-app-rewired
 - create config-overrides and parse config
 
- Cài đặt babel-plugin-module-resolver
--  https://github.com/tleunen/babel-plugin-module-resolver
+Cài đặt babel-plugin-module-resolver
+
+- https://github.com/tleunen/babel-plugin-module-resolver
 - npm install --save-dev babel-plugin-module-resolver
 - create .babelIrc and parse config (setup thu muc goc)
 - create jsconfig.json and parse config (goi y duong dan)
-
 
 https://github.com/arackaf/customize-cra
 config-overrides and parse config
 
 https://github.com/arackaf/customize-cra/blob/master/api.md#usebabelrc
 
-
-
 Khi npm start -> react-app-rewired start (package.json) -> config-override.js -> vì imported usebabelrc -> config file .babelIrc
 
-
+### Config Prettier VsCode
