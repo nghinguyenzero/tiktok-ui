@@ -90,3 +90,11 @@ https://github.com/arackaf/customize-cra/blob/master/api.md#usebabelrc
 Khi npm start -> react-app-rewired start (package.json) -> config-override.js -> vì imported usebabelrc -> config file .babelIrc
 
 ### Config Prettier VsCode
+
+create file .prettierrc , vscode/setting.js
+
+### GLobalStyles
+
+npm i -D sass
+reset scss normalize
+npm install --save normalize.css
