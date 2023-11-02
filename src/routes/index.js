@@ -1,7 +1,7 @@
 import Home from '~/pages/Home'
 import Following from '~/pages/Following'
 import Profile from '~/pages/Profile'
-import { HeaderOnly } from '~/components/Layout'
+import { HeaderOnly } from '~/components/Layouts'
 import Upload from '~/pages/Upload'
 
 // Pubic route
