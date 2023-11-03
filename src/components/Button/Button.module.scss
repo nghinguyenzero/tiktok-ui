@@ -20,6 +20,12 @@
   }
 }
 
+.icon {
+  display: inline-block; // thêm này để chỉnh width
+  width: 20px;
+  text-align: center;
+}
+
 .icon + .title, // title sau ion thi title ml 8px
 .title + .icon {
   margin-left: 8px;
