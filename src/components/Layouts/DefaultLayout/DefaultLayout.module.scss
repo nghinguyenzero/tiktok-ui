@@ -6,11 +6,10 @@
 
 .container {
   width: var(--default-layout-width, 1150px);
+  padding: 0 var(--default-layout-horizontal-spacer);
   display: flex;
 }
 
 .content {
   flex: 1;
-  //   background-color: #ccc;
-  //   min-height: 1000px;
 }
