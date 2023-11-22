@@ -58,17 +58,15 @@ function Search() {
 
   const handleChange = (e) => {
     const searchValue = e.target.value
-    if (!searchValue.startWith(' ')) {
-      return
+    if (!searchValue.startsWith(' ')) {
+      setSearchValue(searchValue)
     }
-    setSearchValue(searchValue)
   }
-
-  const handleSubmit = () => {}
 
   return (
     <HeadlessTippy
       interactive
+      appendTo={() => document.body}
       visible={showResult && searchResult.length > 0}
       render={(attrs) => (
         <div className={cx('search-result')} tabIndex="-1" {...attrs}>
@@ -88,7 +86,7 @@ function Search() {
           value={searchValue}
           placeholder="Search accounts and videos"
           spellCheck={false}
-          onChange={(e) => handleChange}
+          onChange={handleChange}
           onFocus={() => setShowResult(true)}
         />
         {!!searchValue && !loading && (
