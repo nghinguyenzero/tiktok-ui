@@ -1,8 +1,7 @@
+import PropTypes from 'prop-types'
 import classNames from 'classnames/bind'
 import styles from './Button.module.scss'
 import { Link } from 'react-router-dom'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
 const cx = classNames.bind(styles)
 
@@ -55,6 +54,22 @@ function Button({
       {rightIcon && <span className={cx('icon')}>{rightIcon}</span>}
     </Comp>
   )
+}
+Button.propTypes = {
+  to: PropTypes.string,
+  href: PropTypes.string,
+  text: PropTypes.string,
+  primary: PropTypes.bool,
+  outline: PropTypes.bool,
+  small: PropTypes.bool,
+  large: PropTypes.bool,
+  rounded: PropTypes.bool,
+  disabled: PropTypes.bool,
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+  leftIcon: PropTypes.node,
+  rightIcon: PropTypes.node,
+  onClick: PropTypes.func,
 }
 
 export default Button
