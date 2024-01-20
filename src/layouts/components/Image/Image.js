@@ -4,7 +4,7 @@ import images from '~/assets/images'
 import styles from './Image.module.scss'
 import classNames from 'classnames'
 
-const Image = forwardRef(({ src, alt, className, fallback: customFallback = images.noImage, ...props }, ref) => {
+const Image = forwardRef(({ src, alt, className, fallback: customFallback = images.avatarUser, ...props }, ref) => {
   const [fallback, setFallback] = useState('')
   const handleError = () => {
     setFallback(customFallback) // khi Image Error sẽ lấy imge fallback

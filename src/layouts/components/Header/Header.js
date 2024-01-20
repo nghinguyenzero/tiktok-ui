@@ -103,12 +103,7 @@ function Header(props) {
           )}
           <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
             {currentUser ? (
-              <Image
-                className={cx('user-avatar')}
-                alt="Username"
-                src="https://files.fullstack.edu.vn/f8-prod/user_avatars/1/623d4b2d95cec.png"
-                // src="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tiktok-obj/7048172423539228674.jpeg?x-expires=1699178400&x-signature=6fLGLcapfTyWCWiLZwCO5nqLL60%3D"
-              />
+              <Image className={cx('user-avatar')} alt="Username" src={images.avatarUser} />
             ) : (
               <button className={cx('more-btn')}>
                 <FontAwesomeIcon icon={faEllipsisVertical} />
